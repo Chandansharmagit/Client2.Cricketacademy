@@ -1,0 +1,74 @@
+.flex-box-pegination{
+    display: flex;
+
+    border: 1px solid black;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin: 20px;
+    height: auto;
+   
+}
+.items-image-box{
+    margin: 40px;
+   
+}
+
+.national-players-image{
+    width: 110vw;
+    height:auto ;
+
+}
+span{
+    font-weight: bold;
+    font-style: italic;
+}
+.user-details{
+    margin:20px;
+    background: #f0ecec;
+    height: 26vh;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+   
+    
+}
+.personal-details{
+    margin: 20px;
+}
+@keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animation {
+    animation: fadeUp 1s ease-in-out;
+  }
+
+
+@media screen and (max-width: 768px) {
+    .flex-box-pegination {
+      flex-direction: column;
+      height: 103vh;
+    }
+    .national-players-image{
+        width: auto;
+    }
+
+    .mna{
+        font-size: 15px;
+    }
+    .items-image-box{
+        margin: 10px;
+        
+       
+    }
+    
+
+
+
+}

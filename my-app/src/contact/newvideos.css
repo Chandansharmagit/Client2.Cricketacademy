@@ -1,0 +1,86 @@
+/* videos.css */
+
+/* Default styles */
+.mystyle {
+    /* Add your default styles here */
+    border: 1px solid black;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+  }
+  
+  .hq {
+    color: var(--Link_color);
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    font-weight: bold;
+    margin-right: auto;
+    margin-top: 4rem;
+    font-size: 2rem; /* Adjust font size for better readability */
+    text-align: center; /* Center-align text */
+  }
+  
+  /* Underline Effect */
+  .line .hq::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 115%;
+    left: 50%; /* Center align */
+    transform: translateX(-50%);
+    background-color: #33383b;
+    width: 0;
+    height: 3px;
+    transition: width 250ms ease-in;
+  }
+  
+  .line .hq:hover::after {
+    width: 100%;
+  }
+  
+ 
+  
+  /* Responsive styles */
+  
+  /* For tablets and larger phones */
+  @media (max-width: 768px) {
+    .supervisor {
+      max-width: 85%;
+      margin-left: -2rem;
+    }
+    .fourcard {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100vw;
+        margin-left: rem;
+      }
+      .mystyle {
+        /* Add your default styles here */
+        border: 1px solid black;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 2rem;
+        border-radius: 12px;
+      }
+  }
+  
+  /* For small phones */
+  @media (max-width: 480px) {
+    .supervisor {
+      max-width: 100%;
+    }
+  
+    .hq {
+      font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+  
+    .imgicon video {
+      width: 100%;
+      height: auto;
+    }
+  }
+  

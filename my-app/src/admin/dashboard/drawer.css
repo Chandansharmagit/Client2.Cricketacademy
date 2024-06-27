@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+
+}
+
+.sidebar {
+  background: white;
+  color: #fff;
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  margin-top: 5rem;
+  left: -250px;
+  transition: all 0.3s ease;
+  padding-top: 60px;
+  overflow-y: auto;
+}
+
+.sidebar.show {
+  left: 0;
+}
+
+.sidebar-header {
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.sidebar ul li:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.sidebar ul li:last-child {
+  border-bottom: none;
+}
+
+.toggle-btn {
+  position: fixed;
+  top: 20px;
+  width: 90vw;
+  margin-left: 7px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.toggle-icon {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 255, 255);
+  border-radius: 50%;
+  display: flex;
+  margin-top: 7rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-icon:before {
+  content: '\2630';
+  /* Unicode character for hamburger icon */
+  font-size: 20px;
+  color: #fff;
+}
+
+@media (max-width:768px) {
+  .sidebar {
+    margin-top: 4rem;
+  }
+
+  .toggle-icon {
+    margin-top: 5rem;
+  }
+}

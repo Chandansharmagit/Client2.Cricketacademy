@@ -1,0 +1,83 @@
+.header-section {
+    display: flex;
+    flex-wrap: wrap;
+   
+    background: var(--body_background);
+    position: sticky;
+    top: 0;
+}
+
+.another-tag {
+    display: flex;
+    margin-left: auto;
+}
+
+.item {
+    margin: 10px;
+}
+.admin{
+    color: var(--body_color);
+}
+
+.span-con {
+    margin-bottom: 1rem;
+    color: rgb(0, 0, 0);
+    color: var(--body_color);
+    font-size: 15px;
+}
+
+.facebook {
+    color: rgb(0, 0, 0);
+    color: var(--body_color);
+    cursor: pointer;
+}
+
+.insta {
+    color: rgb(0, 0, 0);
+    color: var(--body_color);
+    cursor: pointer;
+}
+
+.youtube {
+    color: rgb(0, 0, 0);
+    color: var(--body_color);
+    cursor: pointer;
+}
+
+.email {
+    color: rgb(0, 0, 0);
+    color: var(--body_color);
+    cursor: pointer;
+    margin: auto;
+}
+
+.phone {
+    color: rgb(0, 0, 0);
+    color: var(--body_color);
+    cursor: pointer;
+}
+
+.nav-links {
+    color: #000;
+    color: var(--body_color);
+    font-size: 20px;
+    margin-top: 0.5rem;
+}
+
+
+@media (max-width:767px) {
+    .another-tag {
+        flex-direction: column;
+        margin-right: 8rem;
+        display: none;
+    }
+
+    .span-email {
+        font-size: 16px;
+        margin-left: 0.5rem;
+    }
+    .span-contact{
+        font-size: 16px;
+        margin-left: 0.5rem;
+    }
+}

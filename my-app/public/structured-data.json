@@ -1,0 +1,21 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "Royal Cricket Academy",
+    "url": "https://royalcricketacademy.com/",
+    "logo": "%PUBLIC_URL%/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-888-123-4567",
+      "contactType": "Customer Service",
+      "areaServed": "US",
+      "availableLanguage": "English"
+    },
+    "sameAs": [
+      "https://www.facebook.com/royalcricketacdemy/",
+      "https://twitter.com/yourhandle",
+      "https://www.linkedin.com/company/yourcompany",
+      "https://www.instagram.com/yourhandle"
+    ]
+  }
+  

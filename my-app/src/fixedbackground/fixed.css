@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css?family=Arimo|Oswald");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300");
+@import url("https://fonts.googleapis.com/css?family=Lusitana:400,700");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arimo', sans-serif;
+}
+
+section:first-child {
+    position: relative;
+    height: 100px;
+}
+
+section .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -35.5px;
+    margin-left: -91.4px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 10px;
+}
+
+.title h1,
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.title h2 {
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 5px;
+    margin-left: 13px;
+}
+
+.p-one {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn.prod.website-files.com/639316a8b61a6c9e4de14301/63a46f84cbe18f388edd867a_Circket%20at%20The%20Gabba%20(optimized).jpeg');
+}
+
+.p-two {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('http://yourshot.nationalgeographic.com/u/fQYSUbVfts-T7odkrFJckdiFeHvab0GWOfzhj7tYdC0uglagsDUfLlPgrXBmpl47L_loRqvjQAF8rf0zUosTGvin-6e78q5sfCcVX3bmVTMIIXO6Tip6RwcEifpvaUYLqZqeb_QXL_hMs0S2-KyKQmlkXBgPl8cmV7EfviKXmGBHSzVSBO6vID7z-6vseqDbm-vjCRptb-cHr6DG_Fw5ZrX16ipWhA/');
+}
+
+.p-three {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('http://yourshot.nationalgeographic.com/u/fQYSUbVfts-T7odkrFJckdiFeHvab0GWOfzhj7tYdC0uglagsDYhq4Ex8s5iidtN2D-gsq8R6I9UvklI2CBfS-FrbCGDzSvH4NAUkD_8qN1OoS2Rbse4v-v8EG0PNP7o3MEKhYPjgh9ctRu0tobfXYMjJtRn13-BIYRDxf-GqgJyeRjwEOM-G5Z93u60vJ1-0Rgw1R1PtW2SmuoYi7z7Eg/');
+}
+
+.p-four {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('http://yourshot.nationalgeographic.com/u/fQYSUbVfts-T7odkrFJckdiFeHvab0GWOfzhj7tYdC0uglagsDcYmE3RitDZn-Yii57x4-5jsHdUxHDMvdLBnj3tfIm1zfzl-yw2G7ANtLSxm2lLwOXVxqJtvDa0ROT0ZaPWLVHzHRbs0cNFiz9YNSaJvYYdELBDYSF_b32fGuTBEu8iX4XGFR7_TBXQ_bSK1N-C5HLTv6gXe4Vp9CadyYOz88E/');
+}
+
+.parallax-inner {
+    position: relative;
+    min-height: 500px;
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+section{
+    height: auto;
+}
+
+.contact-container {
+    display: flex;
+    margin-left: 2rem;
+
+}
+.parallax-inner>h2 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -20.5px;
+    width: 100%;
+    text-align: center;
+}
+
+.content-text p {
+    padding: 25px 50px 25px 50px;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 24px;
+}
+
+.first-letter {
+    float: left;
+    font-weight: 400;
+    font-size: 84px;
+    line-height: 64px;
+    padding-top: 2px;
+    padding-right: 8px;
+    padding-left: 4px;
+}
+
+.line-break {
+    border-bottom: 1px solid #bf2d33;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.red {
+    color: #5e5a58;
+}
+
+.darkgreen {
+    color: #0d2100;
+}
+
+.green {
+    color: #6b6837;
+}
+
+.skyblue {
+    color: #5c9cbf;
+}
+
+
+
+
+
+
+
+
+
+
+
+.row {
+    @include clearfix;
+    margin: -20px 0;
+
+    .col {
+        padding: 0 20px;
+        float: left;
+        box-sizing: border-box;
+
+        &.x-50 {
+            width: 50%;
+        }
+
+        &.x-100 {
+            width: 100%;
+        }
+    }
+}
+
+.content-wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.get-in-touch {
+    max-width: 650px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .title {
+        text-align: center;
+        font-family: Raleway, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 36px;
+        line-height: 48px;
+        padding-bottom: 48px;
+    }
+}
+
+.most-asked {
+    color: white;
+    margin-top: 6.5rem;
+}
+
+.contact-form {
+    .form-field {
+        position: relative;
+        margin: 32px 0;
+    }
+
+
+    .input-text {
+        display: block;
+        width: 100%;
+        height: 36px;
+        border-width: 0 0 2px 0;
+        border-color: #ffffff;
+        font-family: Lusitana, serif;
+        font-size: 18px;
+        color: white;
+        background: transparent;
+        line-height: 26px;
+        margin-top: 5rem;
+        font-weight: 400;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:focus,
+        &.not-empty {
+            +.label {
+                transform: translateY(-24px);
+            }
+        }
+    }
+
+    .label {
+        position: absolute;
+        left: 20px;
+        bottom: 11px;
+        font-family: Lusitana, serif;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #ffffff;
+        cursor: text;
+        transition: transform .2s ease-in-out;
+    }
+
+    .submit-btn {
+        display: inline-block;
+        background-color: #000;
+        color: #fff;
+        font-family: Raleway, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 8px 16px;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.note {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-family: Lusitana, serif;
+    font-size: 16px;
+    line-height: 21px;
+
+    .link {
+        color: #888;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+/* media queries */
+@media screen and (max-width:500px) {
+    .parallax-inner {
+        min-height: 350px;
+        background-size: cover;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    footer>p {
+        width: 100%;
+        font-size: 24px;
+    }
+}

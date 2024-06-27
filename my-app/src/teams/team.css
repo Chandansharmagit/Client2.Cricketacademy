@@ -1,0 +1,100 @@
+.card {
+    border: none;
+    
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    margin-bottom: 20px;
+  }
+  .main-teams{
+  margin: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    transition: 0.4s ease-in-out;
+  }
+  .another-main-teams{
+    margin: 60px;
+  }
+  .hqr{
+    text-align: center;
+  }
+  .our-teams{
+    margin: 30px;
+    text-align: center;
+  
+    
+  }
+  .main-teams:hover{
+    border: 1px solid rgb(255, 0, 0);
+  }
+
+
+  
+  .card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .member-box {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .yy {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  @media (max-width: 1200px) {
+    .card-grid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      width: 85vw;
+      margin-left: -3.2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card-grid {
+      grid-template-columns: 1fr;
+    }
+    .card{
+      width: 83vw;
+      margin-left: -3rem;
+    }
+
+  }
+    

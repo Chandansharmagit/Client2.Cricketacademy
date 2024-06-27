@@ -1,0 +1,71 @@
+.mystyle {
+  margin-top: 5rem;
+
+
+}
+
+/* Media query for adjusting the text styles on smaller screens */
+@media screen and (max-width: 1280px) {
+  .hq {
+    text-align: center;
+    font-size: 25px;
+  }
+}
+
+/* New Image Grid Styles */
+.image-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Three columns by default */
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  gap: 20px;
+}
+
+
+
+.image-grids {
+  width: 100vw;
+  /* Ensure images don't exceed their container */
+  height: auto;
+  border-radius: 12px;
+  transition: 0.4s ease-in-out;
+  /* Maintain aspect ratio */
+}
+
+.image-grid img:hover {
+  transform: scale(1.1);
+}
+
+
+/* Media query for adjusting the grid layout on smaller screens */
+@media screen and (max-width: 768px) {
+  .image-grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Adjust column size for smaller screens */
+    gap: 15px;
+    /* Reduce spacing between images */
+  }
+
+  .hq {
+    margin-left: 0rem;
+  }
+
+
+
+}
+
+/* Media query for adjusting the grid layout on even smaller screens */
+@media screen and (max-width: 717px) {
+  .image-grid-container {
+    grid-template-columns: 1fr;
+    /* Single column for 717px or smaller screens */
+    gap: 10px;
+    /* Further reduce spacing between images */
+  }
+
+ 
+
+}

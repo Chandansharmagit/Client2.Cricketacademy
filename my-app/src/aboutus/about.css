@@ -1,0 +1,53 @@
+/* Styles for larger screens */
+.hello {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ebe9e9;
+   
+
+    /* background: var(--body_background); */
+    color: var(--body_color);
+
+}
+
+.row_pregination {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    margin-left: 1rem;
+    justify-content: space-between;
+    
+}
+.bye{
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+    color: var(--body_color);
+}
+.sa{
+    color: var(--body_color);
+}
+.our{
+    color: var(--body_color);
+}
+.values{
+    color: var(--body_color);
+}
+
+.ccol {
+    width: 48%;
+    /* Adjust as needed */
+}
+
+/* Styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .row_pregination {
+        flex-direction: column;
+    }
+
+    .ccol {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

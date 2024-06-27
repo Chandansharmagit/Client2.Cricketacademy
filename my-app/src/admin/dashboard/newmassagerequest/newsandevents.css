@@ -1,0 +1,144 @@
+/* events.css */
+
+/* General styles for the container */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.admin-dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 10rem;
+}
+
+/* Style for form and events list */
+.event-form,
+.event-list {
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Form input styles */
+.event-form input[type="text"],
+.event-form textarea,
+.event-form input[type="file"],
+.event-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.event-form button {
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.event-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Error and success messages */
+.error-message {
+    color: red;
+    margin-bottom: 20px;
+}
+
+.success-message {
+    color: green;
+    margin-bottom: 20px;
+}
+
+/* Event item styles */
+.event-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.event-item {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-item h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.event-item p {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+}
+
+.event-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.event-item button {
+    cursor: pointer;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.event-item button:hover {
+    background-color: #c82333;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .event-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .event-item h3 {
+        font-size: 16px;
+    }
+
+    .event-item p {
+        font-size: 12px;
+    }
+  
+}
+
+@media (max-width: 480px) {
+    .event-item {
+        flex: 1 1 100%;
+    }
+
+    .event-form input[type="text"],
+    .event-form textarea,
+    .event-form input[type="file"],
+    .event-form button {
+        font-size: 14px;
+    }
+
+    .event-item h3 {
+        font-size: 14px;
+    }
+
+    .event-item p {
+        font-size: 12px;
+    }
+}
